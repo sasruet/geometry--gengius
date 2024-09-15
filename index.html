@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&display=swap" rel="stylesheet">
+    <title>Geometry Genius</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div>
+                <p>
+                    <span class="interactive">Interactive</span><br>
+                    <span class="geometry">Geometry Gengius</span>
+                </p>
+            </div>
+            <a href="answer.html"> <button class="btn-blog">Blog</button></a>
+        </nav>
+    </header>
+    <section>
+        <div class="cards">
+            <div class="card">
+                <img src="images/triangle.png" alt="">
+                <p class="shape-name">Triangle</p>
+                <p class="area">Area (A) = 0.5 * b * h</p>
+                <div class="input-field">
+                    <input type="number" id="triangle-base" placeholder="b"> cm <input type="number"
+                        id="triangle-height" placeholder="h"> cm
+                </div>
+                <button id="triangle-btn" class="cal-btn">Calculate</button>
+            </div>
+            <div id="card-id" class="card">
+                <img src="images/rectangle.png" alt="">
+                <p class="shape-name">Rectangle</p>
+                <p class="area">Area (A) = w * l</p>
+                <div class="input-field">
+                    <input type="number" id="rectangle-width" placeholder="w"> cm <input type="number"
+                        id="rectangle-length" placeholder="l"> cm
+                </div>
+                <button id="rectangle-btn" class="cal-btn">Calculate</button>
+            </div>
+            <div class="card">
+                <img src="images/parallelogram.png" alt="">
+                <p class="shape-name">Parallelogram</p>
+                <p class="area">Area (A) = b * h</p>
+                <div class="input-field">
+                    <input type="number" id="parallelogram-base" placeholder="b"> cm <input type="number"
+                        id="parallelogram-height" placeholder="h"> cm
+                </div>
+                <button id="parallelogram-btn" class="cal-btn">Calculate</button>
+            </div>
+            <div class="card">
+                <img src="images/rhombus.png" alt="">
+                <p class="shape-name">Rhombus</p>
+                <p class="area">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                <div class="input-field">
+                    <p><input type="number" id="rhombus-d1" placeholder="d1"> cm <input type="number" id="rhombus-d2"
+                            placeholder="d2"> cm</p>
+                </div>
+                <button id="rhombus-btn" class="cal-btn">Calculate</button>
+            </div>
+            <div class="card">
+                <img src="images/pentagon.png" alt="">
+                <p class="shape-name">Pentagon</p>
+                <p class="area">Area (A) = 0.5 * p * b</p>
+                <div class="input-field">
+                    <p><input type="number" id="pentagon-p" placeholder="p"> cm <input type="number" id="pentagon-b"
+                            placeholder="b"> cm</p>
+                </div>
+                <button id="pentagon-btn" class="cal-btn">Calculate</button>
+            </div>
+            <div class="card">
+                <img src="images/ellipse.png" alt="">
+                <p class="shape-name">Ellipse</p>
+                <p class="area">Area (A) = π* a * b</p>
+                <div class="input-field">
+                    <p><input type="number" id="ellipse-a" placeholder="a"> cm <input type="number" id="ellipse-b"
+                            placeholder="b"> cm</p>
+                </div>
+                <button id="ellipse-btn" class="cal-btn">Calculate</button>
+            </div>
+        </div>
+
+        <div class="area-calculation">
+           <div><span class="area-cal">
+            <p><u>Area Calculation</u></p>
+        </span></div>
+            <ol id="area-list"> </ol>
+        </div>
+    </section>
+    <script src="js/style.js"></script>
+    <script src="js/calculation.js"></script>
+</body>
+
+</html>
